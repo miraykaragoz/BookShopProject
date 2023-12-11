@@ -8,5 +8,6 @@ namespace BookShopProject.Models
 {
     public class BookType : BaseModel
     {
+         
     }
 }

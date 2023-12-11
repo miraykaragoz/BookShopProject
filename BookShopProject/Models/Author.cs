@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace BookShopProject.Models
 {
-    public class Shelf : BaseModel
+    public class Author : BaseModel
     {
-        public int ShelfNumber {  get; set; }
+        public string Biography { get; set; }
+        public int DateOfBirth { get; set; }
         public ICollection<Book> Books { get; set; } = new List<Book>();
+        public  ICollection<Publisher> Publishers { get; set; } = new List<Publisher>();
     }
 }
