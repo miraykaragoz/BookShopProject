@@ -10,7 +10,7 @@ namespace BookShopProject.Models
     {
         public string Biography { get; set; }
         public int DateOfBirth { get; set; }
-        public ICollection<Book> Books { get; set; } = new List<Book>();
-        public  ICollection<Publisher> Publishers { get; set; } = new List<Publisher>();
+        public ICollection<Book> Books { get; set; }
+        public ICollection<Publisher> Publishers { get; set; } 
     }
 }
