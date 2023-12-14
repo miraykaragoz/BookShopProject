@@ -13,8 +13,7 @@ namespace BookShopProject.Models
         public string PhoneNumber {  get; set; } 
         public bool IsOpen { get; set; }
         public bool IsClosed { get; set; }
-        public ICollection<Book> Books { get; set; }
-        public ICollection<Customer> Customers { get; set; }
-        public ICollection<Shelf> Shelf { get; set; } 
+        public virtual ICollection<Book> Books { get; set; }
+        public virtual ICollection<Shelf> Shelf { get; set; } 
     }
 }

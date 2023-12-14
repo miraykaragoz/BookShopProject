@@ -11,7 +11,7 @@ namespace BookShopProject.Models
         public int PhoneNumber { get; set; }
         public string Email {  get; set; }
         public string Adress { get; set; }
-        public ICollection<Book> Books { get; set; }
-        public ICollection<Author> Authors { get; set; } 
+        public virtual ICollection<Book> Books { get; set; }
+        public virtual ICollection<Author> Authors { get; set; } 
     }
 }

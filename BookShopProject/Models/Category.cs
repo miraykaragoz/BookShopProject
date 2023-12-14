@@ -8,6 +8,8 @@ namespace BookShopProject.Models
 {
     public class Category : BaseModel
     {
-
+        public int? ParentId { get; set; }
+        public virtual Category? Parent { get; set; } 
+        public virtual ICollection<Book> Books { get; set; } 
     }
 }

@@ -8,7 +8,7 @@ namespace BookShopProject.Models
 {
     public class Shelf : BaseModel
     {
-        public int ShelfNumber {  get; set; }
-        public ICollection<Book> Books { get; set; } 
+        public string ShelfNumber {  get; set; }
+        public virtual ICollection<Book> Books { get; set; } 
     }
 }
